@@ -1,7 +1,7 @@
 ---
-
-## name: vertical-slice-plans
+name: vertical-slice-plans
 description: Structure backend implementation plans so a human can implement them by hand, split into small vertical slices (one functionality per slice) with a mermaid sequence diagram per request path. Use when writing an implementation plan, design doc, RFC, or task breakdown for a backend feature, API endpoint, or service change.
+---
 
 # Vertical Slice Plans
 

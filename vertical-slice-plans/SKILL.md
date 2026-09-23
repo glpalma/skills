@@ -1,7 +1,7 @@
 ---
-name: vertical-slice-plans
+
+## name: vertical-slice-plans
 description: Structure backend implementation plans so a human can implement them by hand, split into small vertical slices (one functionality per slice) with a mermaid sequence diagram per request path. Use when writing an implementation plan, design doc, RFC, or task breakdown for a backend feature, API endpoint, or service change.
----
 
 # Vertical Slice Plans
 
@@ -20,7 +20,7 @@ A plan here is read and typed by a human, not applied as a patch. Optimize every
 
 1. **Identify the functionalities.** List every independently-describable capability in the ask (e.g. "log in", "change password", "list accounts", "dashboard summary"). Each becomes one slice, even if two slices touch the same resource.
 2. **Decide if you need an epic.**
-  - One functionality → skip the epic, write a single slice doc directly (see [templates/slice-template.md](templates/slice-template.md)).
+  - One functionality → skip the epic, write a single slice doc in the folder. (see [templates/slice-template.md](templates/slice-template.md)).
   - More than one → write an epic overview first (see [templates/epic-template.md](templates/epic-template.md)), then one slice doc per functionality.
   - Slices splitting into independent clusters → don't nest, create separate epics (see "When one epic becomes several" below) before writing any slice docs.
 3. **Order the slices by dependency, not by layer.** A slice whose data other slices need (e.g. "authenticate" before "change my password") comes first. Record *why*, not just the order.
